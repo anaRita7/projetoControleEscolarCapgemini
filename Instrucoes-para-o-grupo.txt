@@ -1,0 +1,76 @@
+Padronização: (anar, anam, ambrosiaa, alices, evelink, paulas)
+	Commit: nome – descrição (Ex: anar – update README)
+	Branch: feature/nome.descricao_melhoria (Ex: feature/anar.view_cadastro)
+		   hotflix/nome.descricao_correção  (Ex: hotflix/anar.model_notas)
+
+Procedimento:
+* Dar pull antes da criação da branch
+* Sempre criar a branch (nova atividade), seguindo padrão, a partir da develop 
+* Dar push (--upstream) para se ter a branch nova no servidor (colocar atribuição em andamento na aba de projeto do github)
+* Fazer mudanças
+* Ao chegar numa versão que compile (nada está quebrado), dê pull e faça merge da develop para a sua branch atual, resolva possíveis conflitos e cheque que nada está quebrado.
+* Quando tudo estiver funcionando, vá para a develop, dê pull e dê merge da branch para a develop, dê push.
+* Caso esteja concluída a sua atividade naquela branch, apague-a.
+
+Sugestão de Telas para o projeto:		
+
+* Login (Aluno, Professor, Secretaria)
+
+Secretaria:
+* Cadastro de Professor
+* Consulta de Professor
+* Alterar Professor
+* Cadastro de Disciplina
+* Consulta de Disciplina
+* Alterar Disciplina
+* Cadastro de Aluno
+* Consulta de Aluno
+* Alterar Aluno
+* Matricular Aluno
+* Consultar Matrículas
+* Consulta de Notas por Aluno
+* Consulta de Notas por Disciplina
+
+Professor:
+* Consultar suas Disciplinas (vinculadas)
+* Cadastro de Frequência dos alunos na Disciplina
+* Alterar Frequência
+* Cadastro de Notas dos alunos na Disciplina
+* Alterar Nota
+* Consulta de Notas da Turma e Médias 
+
+Aluno:
+* Consultar suas Matrículas
+* Consulta de sua Frequência por Disciplina
+* Consulta de suas Notas e Médias
+* Consultar suas informações de Aluno 
+
+
+Dessa forma, seria necessário: 
+Criar tabela e classe Frequência – adição de classe no Backend e de tabela no Banco
+
+create table frequencia (	
+codFrequencia int not null auto_increment primary key
+codAluno int not null 
+codDisciplina int not null
+dataFrequencia date
+presenca boolean
+); 
+alter table frequencia add foreign key (codaluno) references aluno(codaluno);
+alter table frequencia add foreign key (coddisciplina) references disciplina(coddisciplina);
+
+
+public class Frequencia {
+    public int codFrequencia;
+    public int codAluno;
+    public int codDisciplina;
+    public Date dataFreq;
+    public Boolean presence;
+
+// getters e setters
+public boolean incluirFrequencia()
+public boolean alterarFrequencia(int id, double novaPresenca) 
+public boolean excluirFrequencia(int id) 
+public List<Frequencia> consultarFrequencia() throws SQLException, ClassNotFoundException 
+public List<Frequencia> consultarFrequenciaAluno(int idAluno, int idDisciplina) throws SQLException, ClassNotFoundException 
+public List<Frequencia> consultarFrequenciaDisciplina(int idDiscip) throws SQLException, ClassNotFoundException 
