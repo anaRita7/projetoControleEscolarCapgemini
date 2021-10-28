@@ -5,8 +5,10 @@ import { MatriculaListarComponent } from './matricula-listar/matricula-listar.co
 import { NotasListarAlunoComponent } from './notas-listar-aluno/notas-listar-aluno.component';
 import { NotasListarTurmaComponent } from './notas-listar-turma/notas-listar-turma.component';
 import { ProfessorCadastrarComponent } from './professor-cadastrar/professor-cadastrar.component';
+import { AlunoCadastrarComponent } from './aluno/aluno-cadastrar/aluno-cadastrar.component';
 
 const routes: Routes = [
+  {path: 'aluno-cadastrar', component: AlunoCadastrarComponent},
   {path: 'professor-cadastrar', component: ProfessorCadastrarComponent},
   {path: 'matricula-cadastrar', component: MatriculaCadastrarComponent},
   {path: 'matricula-listar', component: MatriculaListarComponent},

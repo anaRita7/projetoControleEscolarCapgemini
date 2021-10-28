@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlunoCadastrarComponent implements OnInit {
 
+  eMatriculado: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

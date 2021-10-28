@@ -1,41 +1,46 @@
 <!-- CONTEUDO DA PAGINA -->
 <section class="content">
-    <div class="container-fluid">
-      <!--Linha-->
-      <div class="row">
-        <div class="col-md-8">
-          <div class="card card-primary">
-            <div class="card-header">
-              <h3 class="card-title">Cadastro de Aluno</h3>
-            </div>
-  
-            <form>
-              <div class="card-body">
-                <div class="form-group">
-                  <label for="nomeAluno">Nome</label>
-                  <input
-                    type="text"
-                    id="nomeAluno"
-                    name="nomeAluno"
-                    class="form-control"
-                    placeholder="Insira o nome do aluno"
-                    required
-                  />
+  <div class="container-fluid">
+    <!--Linha-->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Cadastro de Aluno</h3>
+          </div>
+
+          <form>
+            <div class="card-body">
+              <div class="form-group">
+                <div class="d-flex">
+                  <div class="form-group flex-lg-fill">
+                    <label for="nomeAluno">Nome</label>
+                    <input
+                      type="text"
+                      id="nomeAluno"
+                      name="nomeAluno"
+                      class="form-control"
+                      placeholder="Insira o nome do aluno"
+                      required
+                    />
+                  </div>
+                  &nbsp;
+                  <div class="form-group">
+                    <label for="cpfAluno">CPF</label>
+                    <input
+                      class="form-control"
+                      value=""
+                      name="cpfAluno"
+                      id="cpfAluno"
+                      type="text"
+                      maxlength="14"
+                      placeholder="999.999.999-99"
+                    />
+                  </div>
                 </div>
-  
-                <div class="form-group">
-                  <label for="cpfAluno">CPF</label>
-                  <input
-                    class="form-control"
-                    value=""
-                    name="cpfAluno"
-                    id="cpfAluno"
-                    type="text"
-                    maxlength="14"
-                    placeholder="999.999.999-99"
-                  />
-                </div>
-  
+              </div>
+
+              <div class="d-flex">
                 <div class="form-group">
                   <label for="dataDeNascimento">Data de nascimento</label>
                   <input
@@ -47,20 +52,35 @@
                     type="date"
                   />
                 </div>
-  
+                &nbsp;
                 <div class="form-group">
                   <label for="dataDeMatricula">Data de matrícula</label>
                   <input
                     class="form-control"
-                    value=""
                     required
                     name="dataDeMatricula"
                     id="dataDeMatricula"
                     type="date"
                   />
                 </div>
-  
-                <div class="form-group">
+                &nbsp;
+                <div class="form-group mb-0">
+                  <div class="form-check" id="customCheck">
+                    <label for="eMatriculado" id="customLabelCheck"
+                      >Está matriculado?
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="eMatriculado"
+                      name="eMatriculado"
+                      class="form-check-input"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="form-group flex-md-fill">
                   <label for="nomeMae">Nome da mãe</label>
                   <input
                     class="form-control"
@@ -72,8 +92,8 @@
                     placeholder="Escreva o nome da mãe"
                   />
                 </div>
-  
-                <div class="form-group">
+                &nbsp;
+                <div class="form-group flex-md-fill">
                   <label for="nomePai">Nome do pai</label>
                   <input
                     class="form-control"
@@ -85,8 +105,10 @@
                     placeholder="Escreva o nome do pai"
                   />
                 </div>
-  
-                <div class="form-group">
+              </div>
+
+              <div class="d-flex">
+                <div class="form-group flex-md-fill">
                   <label for="responsavel">Responsável</label>
                   <input
                     class="form-control"
@@ -97,9 +119,11 @@
                     placeholder="Escreva o nome do(a) responsável"
                   />
                 </div>
-  
+                &nbsp;
                 <div class="form-group">
-                  <label for="telefoneResponsavel">Telefone do responsável</label>
+                  <label for="telefoneResponsavel"
+                    >Telefone do responsável</label
+                  >
                   <input
                     class="form-control"
                     value=""
@@ -111,27 +135,15 @@
                     placeholder="DD999999999"
                   />
                 </div>
-  
-                <div class="form-group mb-0">
-                  <div class="custom-control custom-checkbox">
-                    <label class="custom-control-label">Está matriculado? </label>
-                    <input
-                      type="radio"
-                      id="eMatriculado"
-                      name="eMatriculado"
-                      class="custom-control-input"
-                    />
-                  </div>
-                </div>
               </div>
-              <!-- /.card-body -->
-              <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>

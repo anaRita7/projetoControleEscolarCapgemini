@@ -1,0 +1,15 @@
+#eMatriculado{
+    width: 24px;
+    height: 24px;
+    vertical-align: bottom;
+}
+
+#customCheck{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+#customLabelCheck{
+    padding-left: 5px !important;
+    padding-right: 15px;
+    margin-right: 10px;
+}
