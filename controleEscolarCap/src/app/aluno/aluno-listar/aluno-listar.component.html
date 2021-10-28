@@ -16,16 +16,16 @@
     <!-- corpo da tabela -->
     <tbody>
         
-        <tr>
-           <td> 1 </td>
-           <td class="col-2"> Morgan </td>
-           <td class="col-1"> 111.111.111-11 </td>
-           <td class="col-1"> 1980-10-10 </td>
-           <td class="col-1"> 2021-10-28 </td>
-           <td class="col-2"> John </td>
-           <td class="col-2"> Marie </td>
-           <td class="col-1"> Mãe </td>
-           <td class="col-1"> 87999998888 </td>
+        <tr *ngFor="let aluno of alunos">
+           <td> {{aluno.codAluno}} </td>
+           <td class="col-2"> {{aluno.codAluno}} </td>
+           <td class="col-1"> {{aluno.nomeAluno}} </td>
+           <td class="col-1"> {{aluno.cpfAluno}} </td>
+           <td class="col-1"> {{aluno.dataNascimento}} </td>
+           <td class="col-2"> {{aluno.dataMatricula}} </td>
+           <td class="col-2"> {{aluno.responsavel}} </td>
+           <td class="col-1"> {{aluno.foneResponsavel}} </td>
+           <td class="col-1"> {{aluno.matriculado}} </td>
            <td><a href="#" ><i class="fas fa-exchange-alt"></i>&nbsp;</a> Sim </td>
            <td><a href="#" ><i class="far fa-trash-alt"></i></a></td>
         </tr>

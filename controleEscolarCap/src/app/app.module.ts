@@ -15,6 +15,10 @@ import { AlunoCadastrarComponent } from './aluno/aluno-cadastrar/aluno-cadastrar
 import { AlunoAlterarComponent } from './aluno/aluno-alterar/aluno-alterar.component';
 import { NotasListarAlunoComponent } from './notas-listar-aluno/notas-listar-aluno.component';
 import { NotasListarTurmaComponent } from './notas-listar-turma/notas-listar-turma.component';
+import { FormsModule } from '@angular/forms';
+import { ServiceService } from './Service/service.service';
+import { HttpClientModule } from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -35,9 +39,11 @@ import { NotasListarTurmaComponent } from './notas-listar-turma/notas-listar-tur
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
