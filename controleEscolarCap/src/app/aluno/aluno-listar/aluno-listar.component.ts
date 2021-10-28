@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Aluno } from 'src/app/Model/Aluno';
+import { Aluno } from '../../Model/Aluno';
 import { ServiceService } from '../../Service/service.service'
 
 @Component({
