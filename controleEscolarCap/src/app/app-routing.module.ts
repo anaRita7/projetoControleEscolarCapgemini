@@ -4,7 +4,8 @@ import { MatriculaCadastrarComponent } from './matricula-cadastrar/matricula-cad
 import { MatriculaListarComponent } from './matricula-listar/matricula-listar.component';
 import { NotasListarAlunoComponent } from './notas-listar-aluno/notas-listar-aluno.component';
 import { NotasListarTurmaComponent } from './notas-listar-turma/notas-listar-turma.component';
-import { ProfessorCadastrarComponent } from './professor-cadastrar/professor-cadastrar.component';
+import { ProfessorCadastrarComponent } from './professor/professor-cadastrar/professor-cadastrar.component';
+import { ProfessorListarComponent } from './professor/professor-listar/professor-listar.component';
 import { AlunoCadastrarComponent } from './aluno/aluno-cadastrar/aluno-cadastrar.component';
 import { AlunoListarComponent } from './aluno/aluno-listar/aluno-listar.component';
 import { DisciplinaCadastrarComponent } from './disciplina-cadastrar/disciplina-cadastrar.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'aluno-cadastrar', component: AlunoCadastrarComponent},
   {path: 'aluno-listar', component: AlunoListarComponent},
   {path: 'professor-cadastrar', component: ProfessorCadastrarComponent},
+  {path: 'professor-listar', component:ProfessorListarComponent},
   {path: 'matricula-cadastrar', component: MatriculaCadastrarComponent},
   {path: 'matricula-listar', component: MatriculaListarComponent},
   {path: 'notas-listar-turma', component: NotasListarTurmaComponent},
