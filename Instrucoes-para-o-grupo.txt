@@ -45,6 +45,30 @@ Aluno:
 * Consulta de suas Notas e Médias
 * Consultar suas informações de Aluno 
 
+*COMPONENTES:*
+
+aluno-alterar
+aluno-cadastrar
+aluno-listar
+disciplina-alterar
+disciplina-cadastrar
+disciplina-listar
+matricula-cadastrar
+matricula-listar
+notas-listar-aluno
+notas-listar-turma
+professor-cadastrar
+professor-listar
+
+disciplina-listar-professor
+frequencia-cadastrar
+frequencia-alterar
+frequencia-listar-professor
+notas-cadastrar-turma
+notas-alterar
+
+matricula-listar-aluno
+frequencia-listar-aluno
 
 Dessa forma, seria necessário: 
 Criar tabela e classe Frequência – adição de classe no Backend e de tabela no Banco

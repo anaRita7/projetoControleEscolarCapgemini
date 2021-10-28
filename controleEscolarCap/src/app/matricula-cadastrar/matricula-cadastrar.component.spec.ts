@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MatriculaComponent } from './matricula.component';
+import { MatriculaCadastrarComponent } from './matricula-cadastrar.component';
 
-describe('MatriculaComponent', () => {
-  let component: MatriculaComponent;
-  let fixture: ComponentFixture<MatriculaComponent>;
+describe('MatriculaCadastrarComponent', () => {
+  let component: MatriculaCadastrarComponent;
+  let fixture: ComponentFixture<MatriculaCadastrarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MatriculaComponent ]
+      declarations: [ MatriculaCadastrarComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MatriculaComponent);
+    fixture = TestBed.createComponent(MatriculaCadastrarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
