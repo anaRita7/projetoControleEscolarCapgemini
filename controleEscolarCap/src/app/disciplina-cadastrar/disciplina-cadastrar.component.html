@@ -1,1 +1,62 @@
-<p>disciplina-cadastrar works!</p>
+<!-- CONTEUDO DA PAGINA -->
+<section class="content">
+    <div class="container-fluid">
+
+        <!--Linha-->
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="card card-primary">
+
+                    <div class="card-header">
+
+                        <h3 class="card-title">Cadastro de Disciplina</h3>
+                    </div>
+
+                    <form>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Professor</label>
+                                <div>
+                                    <select name="codProfessor">
+                                        <option value="1">Alice</option>
+                                        <option value="2">Ambrósia</option>
+                                        <option value="3">Ana Luisa</option>
+                                        <option value="4">Ana Rita</option>
+                                        <option value="5">Evellin</option>
+                                        <option value="6">Paula</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Descrição</label>
+                                    <input type="text" name="descDisciplina" class="form-control"
+                                        placeholder="Insira a descrição da disciplina">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Carga Horária</label>
+                                    <input type="text" name="cargaHoraria" class="form-control"
+                                        placeholder="Insira a carga horária">
+                                </div>
+
+                                <div class="form-group mb-0">
+                                    <div class="custom-control custom-checkbox">          
+                                    <label class="custom-control-label">Está ativa? </label>
+                                    <input type="radio" name="ativa" class="custom-control-input" >
+                                  </div>
+                                </div>
+
+
+                                <!-- /.card-body -->
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
