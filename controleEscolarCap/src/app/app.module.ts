@@ -7,6 +7,7 @@ import { ProfessorComponent } from './professor/professor.component';
 import { AlunoComponent } from './aluno/aluno.component';
 import { MatriculaComponent } from './matricula/matricula.component';
 import { ListarMatriculasComponent } from './listar-matriculas/listar-matriculas.component';
+import { CadastrarAlunoComponent } from './aluno/cadastrar-aluno/cadastrar-aluno.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListarMatriculasComponent } from './listar-matriculas/listar-matriculas
     ProfessorComponent,
     AlunoComponent,
     MatriculaComponent,
-    ListarMatriculasComponent
+    ListarMatriculasComponent,
+    CadastrarAlunoComponent
   ],
   imports: [
     BrowserModule,

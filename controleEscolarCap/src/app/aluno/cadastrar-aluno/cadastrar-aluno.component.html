@@ -1,0 +1,136 @@
+<!-- CONTEUDO DA PAGINA -->
+<section class="content">
+  <div class="container-fluid">
+    <!--Linha-->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Cadastro de Aluno</h3>
+          </div>
+
+          <form>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="nomeAluno">Nome</label>
+                <input
+                  type="text"
+                  id="nomeAluno"
+                  name="nomeAluno"
+                  class="form-control"
+                  placeholder="Insira o nome do aluno"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="cpfAluno">CPF</label>
+                <input
+                  class="form-control"
+                  value=""
+                  name="cpfAluno"
+                  id="cpfAluno"
+                  type="text"
+                  maxlength="14"
+                  placeholder="999.999.999-99"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="dataDeNascimento">Data de nascimento</label>
+                <input
+                  class="form-control"
+                  value=""
+                  required
+                  name="dataDeNascimento"
+                  id="dataDeNascimento"
+                  type="date"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="dataDeMatricula">Data de matrícula</label>
+                <input
+                  class="form-control"
+                  value=""
+                  required
+                  name="dataDeMatricula"
+                  id="dataDeMatricula"
+                  type="date"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nomeMae">Nome da mãe</label>
+                <input
+                  class="form-control"
+                  value=""
+                  required
+                  name="nomeMae"
+                  id="nomeMae"
+                  type="text"
+                  placeholder="Escreva o nome da mãe"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nomePai">Nome do pai</label>
+                <input
+                  class="form-control"
+                  value=""
+                  required
+                  name="nomePai"
+                  id="nomePai"
+                  type="text"
+                  placeholder="Escreva o nome do pai"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="responsavel">Responsável</label>
+                <input
+                  class="form-control"
+                  value=""
+                  name="responsavel"
+                  id="responsavel"
+                  type="text"
+                  placeholder="Escreva o nome do(a) responsável"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telefoneResponsavel">Telefone do responsável</label>
+                <input
+                  class="form-control"
+                  value=""
+                  required
+                  name="telefoneResponsavel"
+                  id="telefoneResponsavel"
+                  type="text"
+                  maxlength="11"
+                  placeholder="DD999999999"
+                />
+              </div>
+
+              <div class="form-group mb-0">
+                <div class="custom-control custom-checkbox">
+                  <label class="custom-control-label">Está matriculado? </label>
+                  <input
+                    type="radio"
+                    id="eMatriculado"
+                    name="eMatriculado"
+                    class="custom-control-input"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
