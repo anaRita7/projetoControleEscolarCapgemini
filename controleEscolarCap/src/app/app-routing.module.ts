@@ -7,6 +7,8 @@ import { NotasListarTurmaComponent } from './notas-listar-turma/notas-listar-tur
 import { ProfessorCadastrarComponent } from './professor-cadastrar/professor-cadastrar.component';
 import { AlunoCadastrarComponent } from './aluno/aluno-cadastrar/aluno-cadastrar.component';
 import { AlunoListarComponent } from './aluno/aluno-listar/aluno-listar.component';
+import { DisciplinaCadastrarComponent } from './disciplina-cadastrar/disciplina-cadastrar.component';
+import { DisciplinaListarComponent } from './disciplina-listar/disciplina-listar.component';
 
 const routes: Routes = [
   {path: 'aluno-cadastrar', component: AlunoCadastrarComponent},
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path: 'matricula-cadastrar', component: MatriculaCadastrarComponent},
   {path: 'matricula-listar', component: MatriculaListarComponent},
   {path: 'notas-listar-turma', component: NotasListarTurmaComponent},
-  {path: 'notas-listar-aluno', component: NotasListarAlunoComponent}
+  {path: 'notas-listar-aluno', component: NotasListarAlunoComponent},
+  {path: 'disciplina-cadastrar', component: DisciplinaCadastrarComponent},
+  {path: 'disciplina-listar', component: DisciplinaListarComponent}
 ];
 
 @NgModule({
