@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'professor-cadastrar', component: ProfessorCadastrarComponent},
   {path: 'matricula-cadastrar', component: MatriculaCadastrarComponent},
   {path: 'matricula-listar', component: MatriculaListarComponent},
-  {path: 'notas-listar-turma', component: NotasListarTurmaComponent},
+  {path: 'disciplina-listar/notas-listar-turma', component: NotasListarTurmaComponent},
   {path: 'notas-listar-aluno', component: NotasListarAlunoComponent},
   {path: 'disciplina-cadastrar', component: DisciplinaCadastrarComponent},
   {path: 'disciplina-listar', component: DisciplinaListarComponent}
