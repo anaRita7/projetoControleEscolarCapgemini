@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'matricula-cadastrar', component: MatriculaCadastrarComponent},
   {path: 'matricula-listar', component: MatriculaListarComponent},
   {path: 'disciplina-listar/notas-listar-turma', component: NotasListarTurmaComponent},
-  {path: 'notas-listar-aluno', component: NotasListarAlunoComponent},
+  {path: 'aluno-listar/notas-listar-aluno', component: NotasListarAlunoComponent},
   {path: 'disciplina-cadastrar', component: DisciplinaCadastrarComponent},
   {path: 'disciplina-listar', component: DisciplinaListarComponent}
 ];
