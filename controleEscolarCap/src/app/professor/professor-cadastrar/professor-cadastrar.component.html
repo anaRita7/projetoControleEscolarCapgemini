@@ -1,0 +1,44 @@
+<!-- CONTEUDO DA PAGINA -->
+<section class="content">
+  <div class="container-fluid">
+    <!--Linha-->
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Cadastro de Professores</h3>
+          </div>
+
+          <form>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nome</label>
+                <input
+                  type="text"
+                  name="nomeProfessor"
+                  class="form-control"
+                  placeholder="Insira o nome do professor"
+                />
+              </div>
+            <div class="form-group mb-0">
+                <div class="form-check" id="customCheck">
+                  <label for="eAtivo" id="customLabelCheck">Está ativo? </label>
+                  <input
+                    type="checkbox"
+                    id="eAtivo"
+                    name="eAtivo"
+                    class="form-check-input"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
